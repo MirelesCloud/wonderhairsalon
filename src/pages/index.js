@@ -5,51 +5,63 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../css/main.css'
 import '../css/appointment.css'
 import '../css/contact.css'
+import { graphql } from 'gatsby'
 
-
+//import Test from "../components/test"
 import Layout from "../components/layout"
 
-const TemplateWrapper = (props) => (
-  <div>
+import Services from '../components/services'
+import Intro from '../components/intro'
+import Hours from '../components/hours'
+import Pricing from '../components/pricing'
+import Appointment from '../components/appointment'
+
+import Contact from '../components/contact'
+import Lightbox from '../components/lightbox'
+
+const TemplateWrapper = ({data}) => (
+  <div className="">
     <TypographyStyle typography={typography} />
     <GoogleFont typography={typography} />
+
+    {/*<Test imageHair={data.imageHair.childImageSharp}/>*/}
     <Layout/>
-    
+    <div className="main-container mb-5">
+      <React.Fragment>
+        <Intro/>
+        <Appointment/>
+        <Services/>
+        <Pricing/>
+
+        <Hours/>
+        <Contact/>
+        <Lightbox images={data.allImageSharp.edges}/>
+      </React.Fragment>
+    </div>
+
   </div>
 )
 
-/*
-class TemplateWrapper extends React.Component {
-  render() {
-    return (
-      <div>
-
-        <TypographyStyle typography={typography} />
-        <GoogleFont typography={typography} />
-
-
-        <Gallery imageHair1={this.props.data.imageHair1}/>
-
-
-
-
-      </div>
-    )
-  }
-}
-*/
 
 export default TemplateWrapper
-/*
+
 export const pageQuery = graphql`
-  query {
-    imageHair1: file(relativePath: {eq: "images/hair13.jpg"}) {
-      childImageSharp{
+  query testQuery {
+    imageHair: file(relativePath: {eq: "images/hair9.jpg"}) {
+      childImageSharp {
         fluid(maxWidth: 500) {
           ...GatsbyImageSharpFluid
         }
       }
     }
+    allImageSharp {
+      edges {
+        node {
+          fluid(maxWidth: 600) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
   }
 `
-*/

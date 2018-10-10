@@ -6,7 +6,7 @@ const Pricing = (props) => (
   <StaticQuery
     query={graphql`
       query ImagePricing {
-        imageHair: file(relativePath: {eq: "images/redhairwoman.jpg"}) {
+        imageHair: file(relativePath: {eq: "images/home/redhairwoman.jpg"}) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid

@@ -7,7 +7,7 @@ const Hours = (props) => (
   <StaticQuery
     query={graphql`
       query ImageHours {
-        imageHair: file(relativePath: {eq: "images/hairdresser.jpg"}) {
+        imageHair: file(relativePath: {eq: "images/home/hairdresser.jpg"}) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid

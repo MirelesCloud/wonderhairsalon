@@ -6,21 +6,21 @@ const Services = (props) => (
   <StaticQuery
     query={graphql`
       query ServiceQuery {
-        imageHair1: file(relativePath: {eq: "images/hair5.jpg"}) {
+        imageHair1: file(relativePath: {eq: "images/home/hair5.jpg"}) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        imageHair2: file(relativePath: {eq: "images/hair3.jpg"}) {
+        imageHair2: file(relativePath: {eq: "images/home/hair3.jpg"}) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
             }
           }
         }
-        imageHair3: file(relativePath: {eq: "images/hair4.jpg"}) {
+        imageHair3: file(relativePath: {eq: "images/home/hair4.jpg"}) {
           childImageSharp {
             fluid(maxWidth: 400) {
               ...GatsbyImageSharpFluid
@@ -40,7 +40,7 @@ const Services = (props) => (
           </div>
           <div className="row text-lg-left">
             <div className="col-lg-4 col-md-4 col-xs-6">
-              <div class="d-block mb-4 h-100">
+              <div className="d-block mb-4 h-100">
                 <Img fluid={data.imageHair1.childImageSharp.fluid} className="image-filter"/>
                 <h4 className="text-center header-style mt-3">Hair Cut</h4>
                 <hr/>
@@ -48,7 +48,7 @@ const Services = (props) => (
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-xs-6">
-              <div class="d-block mb-4 h-100">
+              <div className="d-block mb-4 h-100">
                 <Img fluid={data.imageHair2.childImageSharp.fluid} className="image-filter"/>
                 <h4 className="text-center header-style mt-3">Coloring</h4>
                 <hr/>
@@ -56,7 +56,7 @@ const Services = (props) => (
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-xs-6">
-              <div class="d-block mb-4 h-100">
+              <div className="d-block mb-4 h-100">
                 <Img fluid={data.imageHair3.childImageSharp.fluid} className="image-filter"/>
                 <h4 className="text-center header-style mt-3">Skin Care</h4>
                 <hr/>

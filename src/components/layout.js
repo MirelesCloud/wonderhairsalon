@@ -3,15 +3,7 @@ import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
-
 import Header from './header'
-import Services from './services'
-import Intro from './intro'
-import Hours from './hours'
-import Pricing from './pricing'
-import Appointment from './appointment'
-import Gallery from './gallery'
-import Contact from './contact'
 
 
 const Layout = ({children}) => (
@@ -25,7 +17,7 @@ const Layout = ({children}) => (
           title
         }
       }
-      file(relativePath: {eq: "images/banner.jpg"}) {
+      file(relativePath: {eq: "images/home/banner.jpg"}) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -64,17 +56,8 @@ const Layout = ({children}) => (
         </>
       )}
     />
-    <div className="main-container mb-5">
-      <React.Fragment>
-        <Intro/>
-        <Appointment/>
-        <Services/>
-        <Pricing/>
-        <Gallery/>
-        <Hours/>
-        <Contact/>
-      </React.Fragment>
-    </div>
+
+
 
   </div>
 
