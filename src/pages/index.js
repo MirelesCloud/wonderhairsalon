@@ -15,9 +15,8 @@ import Intro from '../components/intro'
 import Hours from '../components/hours'
 import Pricing from '../components/pricing'
 import Appointment from '../components/appointment'
-
 import Contact from '../components/contact'
-import Lightbox from '../components/lightbox'
+import Gallery from '../components/gallery'
 
 const TemplateWrapper = ({data}) => (
   <div className="">
@@ -32,10 +31,10 @@ const TemplateWrapper = ({data}) => (
         <Appointment/>
         <Services/>
         <Pricing/>
-
+        <Gallery images={data.imageGallery.edges}/>
         <Hours/>
         <Contact/>
-        <Lightbox images={data.allImageSharp.edges}/>
+
       </React.Fragment>
     </div>
 
@@ -59,6 +58,17 @@ export const pageQuery = graphql`
         node {
           fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+    imageGallery: allFile(filter: {absolutePath: {regex: "\/images/gallery/"}}) {
+      edges {
+        node {
+          childImageSharp {
+            fluid(maxWidth: 600) {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
