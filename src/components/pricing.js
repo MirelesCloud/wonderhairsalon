@@ -18,7 +18,7 @@ const Pricing = (props) => (
     render={data => (
       <>
         <div className="container-fluid standard-border">
-          <div className="row p-5 mt-5">
+          <div className="row mt-5">
 
             <div className="col-md">
               <h4 className="text-center header-style">Pricing</h4>

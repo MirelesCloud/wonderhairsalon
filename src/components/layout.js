@@ -17,7 +17,7 @@ const Layout = ({children}) => (
           title
         }
       }
-      file(relativePath: {eq: "images/home/banner.jpg"}) {
+      file(relativePath: {eq: "images/home/header.jpg"}) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_tracedSVG
@@ -51,6 +51,7 @@ const Layout = ({children}) => (
 
             }}
           />
+
           <Header image={data.site.siteMetadata.title}/>
 
         </>
