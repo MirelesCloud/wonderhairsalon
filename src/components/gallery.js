@@ -19,19 +19,19 @@ class Gallery extends React.Component {
   render() {
     const { images } = this.props
     return (
-      <span>
+      <span >
         <div className="container-fluid bg-light standard-border">
           <div className="row pt-5 pb-4">
-            <div className="col-lg">
-              <h3 className="text-gray text-center header-style">Salon Gallery</h3>
+            <div className="col-lg" >
+              <h3 className="text-gray text-center header-style" >Salon Gallery</h3>
               <hr/>
               <p className="pl-5 pr-5">Every day, right in our hair salon we are waiting for you, dear customer. Our best stylists are here to give you your dream hairs.</p>
             </div>
           </div>
-          <div className="row image-filter">
+          <div className="row image-filter" id='gallery'>
             {images.map((img) => (
-              <div className="col-lg-3 col-md-4 col-xs-6" >
-                <div  className="d-block mb-4 h-100 gallery">
+              <div className="col-lg-3 col-md-4 col-xs-6"  >
+                <div  className="d-block mb-4 h-100 gallery" >
                   <Img fluid={img.node.childImageSharp.fluid}/>
                 </div>
               </div>

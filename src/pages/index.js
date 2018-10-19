@@ -7,7 +7,7 @@ import '../css/appointment.css'
 import '../css/contact.css'
 import { graphql } from 'gatsby'
 
-//import Test from "../components/test"
+//import Section from "../components/test"
 import Layout from "../components/layout"
 
 import Services from '../components/services'
@@ -17,6 +17,9 @@ import Pricing from '../components/pricing'
 import Appointment from '../components/appointment'
 import StoreMap from '../components/contact'
 import Gallery from '../components/gallery'
+//import Navbar from '../components/navbar'
+import Playground from '../components/playground'
+
 
 const TemplateWrapper = ({data}) => (
   <div className="">
@@ -24,23 +27,19 @@ const TemplateWrapper = ({data}) => (
     <GoogleFont typography={typography} />
 
     {/*<Test imageHair={data.imageHair.childImageSharp}/>*/}
-    <Layout/>
-    <div className="main-container mb-5">
-      <React.Fragment>
-        <Intro/>
-        <Appointment/>
-        <Services/>
-        <Pricing/>
-        <Gallery images={data.imageGallery.edges}/>
-        <Hours/>
-        <StoreMap/>
-
-      </React.Fragment>
-    </div>
-
+    <Layout>
+      <Intro/>
+      <Appointment/>
+      <Services/>
+      <Pricing/>
+      <Gallery images={data.imageGallery.edges}/>
+      <Hours/>
+      <StoreMap/>
+      <Playground/>
+      
+    </Layout>
   </div>
 )
-
 
 export default TemplateWrapper
 

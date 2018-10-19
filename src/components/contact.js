@@ -18,8 +18,16 @@ const StoreLocation = withScriptjs(withGoogleMap(() => {
 class StoreMap extends React.Component {
   render() {
     return (
+
     <div className="container-fluid standard-border">
-      <div className="row m-5">
+      <div className="row pt-5">
+        <div className="col-sm">
+          <h3 className="text-center header-style">Contact</h3>
+          <hr className="ml-5 pl-5 pr-5 mr-5"/>
+          <p className="text-center text-gray pr-5 pl-5">4425 Torrance Blvd, Torrance, CA 90503 - (510) 684-0425</p>
+        </div>
+      </div>
+      <div className="row m-5" id='contact'>
         <div className="col-md">
           <div className="map-box">
             <div className="map-box-inside">

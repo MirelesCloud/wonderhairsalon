@@ -43,12 +43,11 @@ const Layout = ({children}) => (
             fluid={data.file.childImageSharp.fluid}
             style={{
               width: '100%',
-              height: '60%',
+              height: '80%',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               position: 'absolute',
-
             }}
           />
 
@@ -57,7 +56,9 @@ const Layout = ({children}) => (
         </>
       )}
     />
-
+    <div className="main-container mb-5">
+      {children}
+    </div>
 
 
   </div>

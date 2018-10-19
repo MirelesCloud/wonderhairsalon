@@ -16,6 +16,7 @@ const Hours = (props) => (
         }
       }
     `}
+
     render={data => (
       <>
         <div className="container-fluid standard-border">
@@ -23,10 +24,10 @@ const Hours = (props) => (
             <div className="col-md image-filter">
               <Img fluid={data.imageHair.childImageSharp.fluid}/>
             </div>
-            <div className="col-md pr-5">
+            <div className="col-md pr-5" id='hours'>
               <h3 className="text-center header-style">Salon Hours</h3>
               <hr/>
-              <table className="table table-bordered">
+              <table className="table table-bordered" >
                 <thead className="thead-light">
                   <tr >
                     <th scope="col" className="text-center pl-3">Mon</th>

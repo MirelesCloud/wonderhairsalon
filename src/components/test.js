@@ -1,23 +1,36 @@
-import React from 'react'
-import Img from 'gatsby-image'
+import React from 'react';
 
-const Test = (props) => (
-  <div className="container-fluid bg-light standard-border intro-container">
-    <div className="row  pt-5 pb-5 ">
-      <div className="col-lg">
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-        <h3 className="text-center text-gray header-style">Welcome to our salon</h3>
-        <Img fluid={props.imageHair.fluid}/>
-        <div className="ml-5 pl-5 pr-5 mr-5">
-          <hr/>
-        </div>
+const Section= () => (
+ <div>
+   <AnchorLink href='#things'>Things</AnchorLink>
+   <AnchorLink href='#stuff'>Stuff</AnchorLink>
+   <div className="container">
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+     <h1>x</h1>
+   </div>
 
-
-      </div>
-
-    </div>
-
-  </div>
+   <section id='things'>
+     <h2>Things</h2>
+   </section>
+   <section id='stuff'>
+     <h2>Stuff</h2>
+   </section>
+ </div>
 )
 
-export default Test
+export default Section
