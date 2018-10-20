@@ -3,7 +3,9 @@ import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import { StaticQuery, graphql } from 'gatsby'
 
+
 import Header from './header'
+
 
 
 const Layout = ({children}) => (
@@ -53,12 +55,14 @@ const Layout = ({children}) => (
 
           <Header image={data.site.siteMetadata.title}/>
 
+
         </>
       )}
     />
     <div className="main-container mb-5">
       {children}
     </div>
+
 
 
   </div>

@@ -1,15 +1,17 @@
 import React from "react"
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import typography from '../utils/typography'
+
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../css/main.css'
 import '../css/appointment.css'
 import '../css/contact.css'
 import { graphql } from 'gatsby'
 
+
+
 //import Section from "../components/test"
 import Layout from "../components/layout"
-
 import Services from '../components/services'
 import Intro from '../components/intro'
 import Hours from '../components/hours'
@@ -17,16 +19,18 @@ import Pricing from '../components/pricing'
 import Appointment from '../components/appointment'
 import StoreMap from '../components/contact'
 import Gallery from '../components/gallery'
-//import Navbar from '../components/navbar'
-import Playground from '../components/playground'
+import Footer from '../components/footer'
+import Top from '../components/top-button'
+//import Playground from '../components/playground'
 
 
 const TemplateWrapper = ({data}) => (
-  <div className="">
+  <div>
     <TypographyStyle typography={typography} />
     <GoogleFont typography={typography} />
 
     {/*<Test imageHair={data.imageHair.childImageSharp}/>*/}
+
     <Layout>
       <Intro/>
       <Appointment/>
@@ -35,9 +39,9 @@ const TemplateWrapper = ({data}) => (
       <Gallery images={data.imageGallery.edges}/>
       <Hours/>
       <StoreMap/>
-      <Playground/>
-      
+      <Footer/>
     </Layout>
+    <Top/>
   </div>
 )
 
