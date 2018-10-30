@@ -2,6 +2,18 @@ body {
   background-color: #2b2d2d
 }
 
+@media screen and (max-width: 599px) {
+  #hours {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #hours-responsive {
+    display: none;
+  }
+}
+
 .to-top {
   position: fixed;
   bottom: 100px;
@@ -118,7 +130,7 @@ body {
     margin-right: 5px;
 }
 
-.button-brown {
+.button-blue {
     border: solid 1px #a2b9c6;
     background: #304256;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
@@ -146,4 +158,25 @@ body {
         padding: 7px 11px;
         font-size: 11px;
     }
+}
+
+/*********************Appointment*************************/
+.input-helper {
+    width: 35px;
+    background: #304256;
+    height: 34px;
+    float: left;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top: 1px solid #a2b9c6;
+    border-left: 1px solid #a2b9c6;
+    border-bottom: 1px solid #a2b9c6;
+    box-shadow: 0 -1px 0 #a2b9c6;
+    position: relative;
+    margin-top: 1px;
+
 }

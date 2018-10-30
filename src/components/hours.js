@@ -20,14 +20,14 @@ const Hours = (props) => (
     render={data => (
       <>
         <div className="container-fluid standard-border">
-          <div className="row mt-5">
-            <div className="col-md image-filter">
+          <div className="row mt-5" id='hours'>
+            <div className="col-md-4 image-filter">
               <Img fluid={data.imageHair.childImageSharp.fluid}/>
             </div>
-            <div className="col-md pr-5" id='hours'>
+            <div className="col-md-6 table-responsive" >
               <h3 className="text-center header-style">Salon Hours</h3>
               <hr/>
-              <table className="table table-bordered" >
+              <table className="table table-bordered " >
                 <thead className="thead-light">
                   <tr >
                     <th scope="col" className="text-center pl-3">Mon</th>
@@ -57,6 +57,54 @@ const Hours = (props) => (
                     <td className="text-center table-column">6pm</td>
                     <td className="text-center">6pm</td>
                     <td className="text-center table-column pr-3">6pm</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+          </div>
+          <div className="row mt-5" id="hours-responsive">
+            <div className="col-md-6 table-responsive">
+              <h3 className="text-center header-style">Salon Hours</h3>
+              <hr/>
+              <table className="table table-bordered table-sm" >
+
+                <tbody >
+                  <tr >
+                    <th className="text-center table-column pl-3">Mon</th>
+                    <td className="text-center">10am</td>
+                    <td className="text-center table-column">10pm</td>
+                  </tr>
+                  <tr >
+                    <th className="text-center table-column pl-3">Tue</th>
+                    <td className="text-center">10am</td>
+                    <td className="text-center table-column">10pm</td>
+                  </tr>
+                  <tr >
+                    <th className="text-center table-column pl-3">Wed</th>
+                    <td className="text-center">10am</td>
+                    <td className="text-center table-column">10pm</td>
+                  </tr>
+                  <tr >
+                    <th className="text-center table-column pl-3">Thu</th>
+                    <td className="text-center">10am</td>
+                    <td className="text-center table-column">10pm</td>
+                  </tr>
+                  <tr >
+                    <th className="text-center table-column pl-3">Fri</th>
+                    <td className="text-center">10am</td>
+                    <td className="text-center table-column">10pm</td>
+                  </tr>
+                  <tr >
+                    <th className="text-center table-column pl-3">Sat</th>
+                    <td className="text-center">10am</td>
+                    <td className="text-center table-column">10pm</td>
+                  </tr>
+                  <tr >
+                    <th className="text-center table-column pl-3">Sun</th>
+                    <td className="text-center">10am</td>
+                    <td className="text-center table-column">10pm</td>
                   </tr>
                 </tbody>
               </table>
