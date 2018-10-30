@@ -2,6 +2,15 @@ body {
   background-color: #2b2d2d
 }
 
+.main-container {
+    background-color: #fff;
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    margin-left: 7%;
+    border-radius: 5px
+}
+
 @media screen and (max-width: 599px) {
   #hours {
     display: none;
@@ -10,6 +19,12 @@ body {
 
 @media screen and (min-width: 600px) {
   #hours-responsive {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  #hairdresser {
     display: none;
   }
 }
@@ -91,14 +106,7 @@ body {
   background-color: rgba(0,0,0,0.045);
 }
 
-.main-container {
-    background-color: #fff;
-    width: 85%;
-    position: absolute;
-    top: 60%;
-    margin-left: 7%;
-    border-radius: 5px
-}
+
 
 .gallery {
   display: grid;

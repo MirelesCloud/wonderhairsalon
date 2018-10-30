@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faPinterestSquare, faInstagram, } from '@fortawesome/free-brands-svg-icons'
+
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 
@@ -24,14 +26,16 @@ class StoreMap extends React.Component {
     return (
 
     <div className="container-fluid standard-border">
-      <div className="row mt-5">
+      <div className="row mt-5 ">
         <div className="col-sm ">
           <h3 className="text-center header-style">Contact</h3>
           <hr className="ml-5 pl-5 pr-5 mr-5"/>
           <p className="text-center text-gray pr-5 pl-5">4425 Torrance Blvd, Torrance, CA 90503 - (510) 684-0425</p>
           <div className="mx-auto" style={{width: 200}}>
-
-            <FontAwesomeIcon icon={faEnvelope} className="fa-2x m-2"/>
+            <FontAwesomeIcon icon={faEnvelope} className="fa-2x m-2" />
+            <FontAwesomeIcon icon={faFacebook} className="fa-2x m-2"/>
+            <FontAwesomeIcon icon={faPinterestSquare} className="fa-2x m-2"/>
+            <FontAwesomeIcon icon={faInstagram} className="fa-2x m-2"/>
 
           </div>
 

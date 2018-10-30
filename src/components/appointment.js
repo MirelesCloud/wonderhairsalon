@@ -2,10 +2,10 @@ import React from 'react'
 
 const Appointment = () => (
   <section className="container-fluid standard-border">
-    <div className="row mt-4">
-      <div className="col-sm" id='appointment'>
+    <div className="row mt-4 ">
+      <div className="col-sm " id='appointment'>
         <h4 className="text-center header-appointment">Make an appointment</h4>
-        <form className="form-inline flex-row" >
+        <form className="form-inline justify-content-center align-items-center" >
           <button className="mb-2 mr-sm-2 input-helper"/>
           <input className="form-control-sm mb-2 mr-sm-2" placeholder="Appointment Date"/>
           <button className="mb-2 mr-sm-2 input-helper"/>
