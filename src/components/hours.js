@@ -21,13 +21,13 @@ const Hours = (props) => (
       <>
         <div className="container-fluid standard-border">
           <div className="row mt-5" id='hours'>
-            <div className="col-lg col-md image-filter" id="hairdresser">
+            <div className="col-lg-6 col-md-6 col-xs-6 image-filter" id="hairdresser">
               <Img fluid={data.imageHair.childImageSharp.fluid}/>
             </div>
-            <div className="col-lg col-md col-sm" >
+            <div className="col-lg-6 col-md-6 col-xs-6" >
               <h3 className="text-center header-style">Salon Hours</h3>
               <hr/>
-              <table className="table table-bordered " >
+              <table className="table table-bordered mr-5">
                 <thead className="thead-light">
                   <tr >
                     <th scope="col" className="text-center pl-3">Mon</th>
@@ -64,7 +64,7 @@ const Hours = (props) => (
             </div>
 
           </div>
-          <div className="row mt-5" id="hours-responsive">
+          <div className="row mt-5 justify-content-center" id="hours-responsive">
             <div className="col-md-6 table-responsive">
               <h3 className="text-center header-style">Salon Hours</h3>
               <hr/>

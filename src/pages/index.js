@@ -34,10 +34,10 @@ const TemplateWrapper = ({data}) => (
     <Layout>
       <Intro/>
       <Appointment/>
-      <Services/>
       <Pricing/>
-      <Gallery images={data.imageGallery.edges}/>
+      <Services/>
       <Hours/>
+      <Gallery images={data.imageGallery.edges}/>
       <StoreMap/>
       <Footer/>
     </Layout>

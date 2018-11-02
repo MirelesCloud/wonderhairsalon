@@ -18,43 +18,18 @@ const Pricing = (props) => (
     render={data => (
       <>
         <div className="container-fluid standard-border">
-          <div className="row mt-5">
-
-            <div className="col-md">
-              <h4 className="text-center header-style">Pricing</h4>
-              <hr/>
-              <table className="table table-sm">
-                <tbody >
-                  <tr className="table-secondary">
-                    <th scope="row" className="text-md-center">Blow Dry</th>
-                    <td>$50</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" className="text-md-center">Haircut, Shampoo & Basic Style</th>
-                    <td>$150</td>
-                  </tr>
-                  <tr className="table-secondary">
-                    <th scope="row" className="text-md-center">Haircut, Shampoo & Full Style</th>
-                    <td>$180</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" className="text-md-center">Cut & Color</th>
-                    <td>$150</td>
-                  </tr>
-                  <tr className="table-secondary">
-                    <th scope="row" className="text-md-center">Partial Highlights and Cuts</th>
-                    <td>$180</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" className="text-md-center">Full Highlights & Cut</th>
-                    <td>$150</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="col-md image-filter">
-              <Img fluid={data.imageHair.childImageSharp.fluid}/>
-            </div>
+          <div className="row mt-1">
+              <div className="col-lg-6 col-md-6 col-xs-6">
+                <h2 className="text-center mt-5">Cut & Finish - 20% off! </h2>
+                <hr/>
+                <p className="text-justify">Nulla at diam ornare, aliquam urna vel, commodo urna. Nam id risus a est luctus consectetur quis eget libero.Suspendisse potenti.</p>
+                <p className="text-justify">uspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas mattis sit amet ipsum sit amet condimentum.</p>
+              </div>
+              <div className="col-lg-6 col-md-6 col-xs-6">
+                <div className="col-md image-filter">
+                  <Img fluid={data.imageHair.childImageSharp.fluid}/>
+                </div>
+              </div>
           </div>
         </div>
       </>

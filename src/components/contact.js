@@ -30,7 +30,7 @@ class StoreMap extends React.Component {
         <div className="col-sm ">
           <h3 className="text-center header-style">Contact</h3>
           <hr className="ml-5 pl-5 pr-5 mr-5"/>
-          <p className="text-center text-gray pr-5 pl-5">4425 Torrance Blvd, Torrance, CA 90503 - (510) 684-0425</p>
+          <h4 className="text-center text-gray pr-5 pl-5">4425 Torrance Blvd, Torrance, CA 90503 - (510) 684-0425</h4>
           <div className="mx-auto" style={{width: 200}}>
             <FontAwesomeIcon icon={faEnvelope} className="fa-2x m-2" />
             <FontAwesomeIcon icon={faFacebook} className="fa-2x m-2"/>
